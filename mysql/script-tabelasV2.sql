@@ -134,12 +134,6 @@ registro decimal,
 data_hora datetime default current_timestamp
 );
 
-insert into usuario values(null, 'Yohan', 'Torquato arcas Hudson', 'yohan.hudson@gmail.com', 'Camila@01', 1, null);
-
-insert into dispositivo (id, marca, modelo, host_name, sistema_operacional) values(null, 'dell', 'gts 5', 'STFSAOC048646-L', 'Windown');
-
-insert into usuario_maquina (id, fk_dispositivo, fk_usuario) values(null, 1, 1);
-
 select * from dispositivo;
 select * from tipo_metrica;
 select * from historico;
@@ -150,4 +144,4 @@ INSERT INTO tipo_metrica VALUES (NULL, 'Processador', 'Uso', '%');
 INSERT INTO tipo_metrica VALUES (NULL, 'Memoria', 'Uso', '%');
 INSERT INTO tipo_metrica VALUES (NULL, 'Disco', 'Uso', '%');
 INSERT INTO tipo_metrica VALUES (NULL, 'Temperatura', 'Total', '%');
-INSERT INTO tipo_metrica VALUES (NULL, 'UsoMemoriaProcesso', '%');
+INSERT INTO tipo_metrica VALUES (NULL, 'UsoMemoriaProcesso', 'uso','%');
