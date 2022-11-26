@@ -29,14 +29,12 @@ then
 	sudo docker build -t mysql .
 	sleep 30
 	sudo docker run --name PontoSa -p 3306:3306 mysql
-	sleep 10
+	bash
+	cd PontoSaInstalacaoCLI
+	chmod +x jarinstalacao.sh
+	jarinstalacao.sh
 	
 else
 	echo "TESTE PARA VER SE FUNCIONA ELSE"
 	sudo docker start PontoSa
 fi
-	cd ..
-	cd jar
-	sudo docker build -t java .
-	sleep 30
-	sudo docker run -it --name jar -p 8080:8080 java
